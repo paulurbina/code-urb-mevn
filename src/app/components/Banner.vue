@@ -2,7 +2,7 @@
     <div>
          <header id="header" class="">
             <div class="container-fluid">
-                <div class="row position-relative text-center">
+                <div class="row style-banner-principal">
                     <img id="style-banner" class="img-fluid" src="/assets/banner-principal.jpg">
                     <p class="texto-banner position-absolute">
                         Diseñamos tu sitio web<br>
@@ -25,20 +25,18 @@
 	height: 610px;
 }
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 700px) and (min-width: 401px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        overflow: hidden;
+    }
     #style-banner {
         width: 100%;
         height: 400px;
-        overflow: hidden;
-    }
-    #header .texto-banner {
-        font-size: 20px;
     }
 }
-#header .texto-banner {
-	font-size: 50px;
-	bottom: 90px;
-	right: 90px;
-	color: #fff;
-}
+
 </style>
