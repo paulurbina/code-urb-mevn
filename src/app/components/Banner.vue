@@ -29,13 +29,19 @@
     
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     body {
         overflow: hidden;
     }
     #style-banner {
         width: 100%;
         height: 400px;
+    }
+    .texto-banner {
+        font-size: 25px;
+        right: 25%;
+        top: 35%;
+        color: #ffffff;
     }
 }
 
