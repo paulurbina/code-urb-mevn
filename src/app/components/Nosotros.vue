@@ -21,22 +21,31 @@
         </section>
     </div>
 </template>
-<style>
+<style scoped>
 @media screen {
    .nosotros-content-right {
        font-size: 30px;
-       font-family: MyriadPro-Regular;
+       font-family: NewsGothicLightBT;
+       color: #3A3A3A;
    }
    
 }
 
-@media screen and (max-width: 750px) and (min-width: 401px) {
+@media screen and (max-width: 750px) and (min-width: 420px) {
     .nosotros-titulo {
         font-size: 15px;
         text-align: center;
     }
 }
-@media screen and (max-width: 400px) {
-    
+@media screen and (max-width: 419px) {
+    h2.nosotros-titulo {
+        font-size: 25px;
+        text-align: center;
+    }
+    .nosotros-description {
+        font-size: 23px;
+        text-align: center;
+        padding-top: -40px;
+    }
 }
 </style>

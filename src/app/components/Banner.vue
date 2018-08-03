@@ -14,7 +14,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 @media screen {
     #style-banner {
 	background-position: center center;

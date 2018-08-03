@@ -31,7 +31,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 #navbarNav li a {
 	color: #447FC6;
 	font-weight: bold;
