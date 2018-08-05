@@ -3,6 +3,7 @@
         <Navigation_menu></Navigation_menu>
         <Banner_principal></Banner_principal>
         <Nosotros_seccion></Nosotros_seccion>
+        <Servicios_seccion></Servicios_seccion>
     </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Navigation from './components/Navigation.vue';
 import Banner from './components/Banner.vue';
 import Nosotros from './components/Nosotros.vue';
+import Servicios from './components/Servicios.vue';
 
 export default {
     components: {
         Navigation_menu: Navigation,
         Banner_principal: Banner,
-        Nosotros_seccion: Nosotros
+        Nosotros_seccion: Nosotros,
+        Servicios_seccion: Servicios
     },
 }
 </script>
