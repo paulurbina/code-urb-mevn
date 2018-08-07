@@ -10,8 +10,8 @@
                     </div>
                     <div class="col-md-6 col-xs-6">
                         <div class="nosotros-content-right middle-xs">
-                                <h2 class="nosotros-titulo mt-5">EN SYSTEMS URB</h2>
-                                <P class="nosotros-description mt-5">
+                                <h2 class="nosotros-titulo">EN SYSTEMS URB</h2>
+                                <P class="nosotros-description">
                                 Te damos el mejor servicio web <br> de calidad para aumentar la rentabilidad <br> y posicionamiento
                             </P>
                         </div>
@@ -27,13 +27,17 @@
        font-size: 30px;
        font-family: NewsGothicLightBT;
        color: #3A3A3A;
+       padding-top: 90px;
+       padding-bottom: 90px;
    }
-   
 }
 
 @media screen and (max-width: 750px) and (min-width: 420px) {
     .nosotros-titulo {
-        font-size: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .nosotros-description {
         text-align: center;
     }
 }
