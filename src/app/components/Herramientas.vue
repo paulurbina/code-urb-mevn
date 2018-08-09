@@ -1,40 +1,46 @@
 <template>
     <div>
         <section id="herramientas">
-            <div class="container">
+
                 <div class="slider">
-                <div class="slide-track">
-                    <div class="slide">
-                        <img src="/assets/iconos-herramientas/item-icono-1.png" height="100" width="100" alt="" />
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-1.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-2.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-3.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-4.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-5.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-6.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-7.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/iconos-herramientas/item-icono-8.png" alt="" />
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-                    </div>
-                    
-                </div>
             </div>
-            </div>
+
         </section>
     </div>
 </template>
 
 <style scoped>
 @media screen {
+    img {
+        width: 100px;
+        height: 100px;
+    }
     @keyframes scroll {
 	0% {
 	  transform: translateX(0);
@@ -45,19 +51,21 @@
 }
 .slider {
 	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
 	height: 100px;
-	margin:auto;
+	margin-top: 30px;
+    margin-bottom: 30px;
+    padding: auto;
 	overflow: hidden;
 	position: relative;
-	width: 960px;
+	width: 100%;
   }
   .slider::before, .slider::after {
 	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
 	content: "";
 	height: 100px;
 	position: absolute;
-	width: 200px;
+	width: 250px;
 	z-index: 2;
   }
   .slider::after {
@@ -77,6 +85,18 @@
   .slider .slide {
 	height: 100px;
 	width: 250px;
+  }
+}
+@media screen and (max-width: 750px){
+    .slider {
+        margin: auto;
+    }
+   .slider::before, .slider::after {
+       background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 0%);
+       content: "";
+   }
+   .slider .slide-track {
+	animation: scroll 20s linear infinite;
   }
 }
 </style>

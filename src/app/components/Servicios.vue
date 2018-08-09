@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="servicios-titulo">
-                        <h3 class="display-2">Servicios</h3>
+                        <h3>Servicios</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -43,6 +43,9 @@
         color: #3A3A3A;
         font-family: BebasNeue Regular, Arial, Helvetica, sans-serif;
     }
+    .servicios-titulo h3 {
+        font-size: 40px;
+    }
    .grid-container {
        display: grid;
        grid-template-columns: repeat(3,1fr);
@@ -54,6 +57,9 @@
 @media screen and (max-width: 750px) {
     .grid-container {
         grid-template-columns: repeat(2,1fr);
+    }
+    h3 {
+        font-style: 30px;
     }
 }
 /* @media screen and (max-width: 419px) {
