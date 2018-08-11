@@ -5,6 +5,7 @@
         <Nosotros_seccion></Nosotros_seccion>
         <Servicios_seccion></Servicios_seccion>
         <Herramientas_seccion></Herramientas_seccion>
+        <Contactanos_seccion></Contactanos_seccion>
     </div>
 </template>
 
@@ -14,14 +15,23 @@ import Banner from './components/Banner.vue';
 import Nosotros from './components/Nosotros.vue';
 import Servicios from './components/Servicios.vue';
 import Herramientas from './components/Herramientas.vue';
+import Contactanos from './components/Contactanos.vue';
 
-export default {
+export default { 
     components: {
         Navigation_menu: Navigation,
         Banner_principal: Banner,
         Nosotros_seccion: Nosotros,
         Servicios_seccion: Servicios,
-        Herramientas_seccion: Herramientas
+        Herramientas_seccion: Herramientas,
+        Contactanos_seccion: Contactanos
     },
 }
 </script>
+
+<style>
+    div {
+        margin: auto;
+        padding: auto;
+    }
+</style>

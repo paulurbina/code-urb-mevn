@@ -1,7 +1,9 @@
 <template>
     <div>
         <section id="herramientas">
-
+                <div class="titulo-herramientas">
+                    <h3>INNOVAMOS E UTILIZAMOS HERRAMIENTAS DE ÚLTIMA GENERACIÓN</h3>
+                </div>
                 <div class="slider">
                     <div class="slide-track">
                         <div class="slide">
@@ -37,6 +39,13 @@
 
 <style scoped>
 @media screen {
+    .titulo-herramientas h3 {
+        color: #3A3A3A;
+        font-family: BebasNeue Regular;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
     img {
         width: 100px;
         height: 100px;
