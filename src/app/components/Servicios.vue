@@ -32,19 +32,17 @@
             </div>
         </section>
     </div>    
-</template>
+</template> 
 
 
 <style scoped>
 @media screen {
-    .servicios-titulo {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #3A3A3A;
-        font-family: BebasNeue Regular, Arial, Helvetica, sans-serif;
-    }
     .servicios-titulo h3 {
-        font-size: 40px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        color: #3A3A3A;
+        font-family: 'BebasNeue Regular', Arial, Helvetica, sans-serif;
+        font-size: 80px;
     }
    .grid-container {
        display: grid;

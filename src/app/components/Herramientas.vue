@@ -1,6 +1,7 @@
 <template>
     <div>
         <section id="herramientas">
+            <div class="contenedor-herramientas">
                 <div class="titulo-herramientas">
                     <h3>INNOVAMOS E UTILIZAMOS HERRAMIENTAS DE ÚLTIMA GENERACIÓN</h3>
                 </div>
@@ -32,19 +33,26 @@
                         </div>
                     </div>
             </div>
-
+            </div>
         </section>
     </div>
 </template>
 
 <style scoped>
 @media screen {
+    .contenedor-herramientas {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        height: 180px;
+    }
     .titulo-herramientas h3 {
         color: #3A3A3A;
-        font-family: BebasNeue Regular;
+        font-family: 'BebasNeue Regular','Courier New', Courier, monospace;
         justify-content: center;
         text-align: center;
         margin: 20px;
+        font-size: 40px;
+        font-weight: bold;
     }
     img {
         width: 100px;
