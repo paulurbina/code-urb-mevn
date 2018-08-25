@@ -6,6 +6,7 @@
         <Servicios_seccion></Servicios_seccion>
         <Herramientas_seccion></Herramientas_seccion>
         <Contactanos_seccion></Contactanos_seccion>
+        <Pie_seccion></Pie_seccion>
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import Nosotros from './components/Nosotros.vue';
 import Servicios from './components/Servicios.vue';
 import Herramientas from './components/Herramientas.vue';
 import Contactanos from './components/Contactanos.vue';
+import Pie from './components/Pie.vue';
 
 export default { 
     components: {
@@ -24,7 +26,8 @@ export default {
         Nosotros_seccion: Nosotros,
         Servicios_seccion: Servicios,
         Herramientas_seccion: Herramientas,
-        Contactanos_seccion: Contactanos
+        Contactanos_seccion: Contactanos,
+        Pie_seccion: Pie
     },
 }
 </script>
