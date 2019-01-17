@@ -7,7 +7,7 @@
       <div class="container">
         <div class="section-header">
           <h3>Contactenos</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>Hola! estás interesad@ en iniciar un proyecto digital con nosotros, pues déjanos un mensaje para poder ayudarte</p>
         </div>
 
         <div class="row contact-info">

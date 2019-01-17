@@ -8,7 +8,7 @@
 
         <header class="section-header">
           <h3>SOBRE NOSOTROS</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>En System Urb nos enfocamos en darle una nueva experiencia digital a tu marca para que sea  vista mundialmente. </p>
         </header>
 
         <div class="row about-cols">
@@ -20,8 +20,8 @@
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestra Mision</a></h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <p class="text-justify">
+                Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales. 
               </p>
             </div>
           </div>
@@ -33,8 +33,8 @@
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestro Plan</a></h2>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              <p class="text-justify">
+                Fortalecer a nuestros socios usando las nuevas tecnologías e diseños innovadores para sobresalir como empresa y llamar la atención de los consumidores. 
               </p>
             </div>
           </div>

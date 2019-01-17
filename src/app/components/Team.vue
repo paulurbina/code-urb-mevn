@@ -7,7 +7,7 @@
       <div class="container">
         <div class="section-header wow fadeInUp">
           <h3>Equipo</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>Nuestro equipo de trabajo es esencial dentro de la empresa ya que lograran  que tu marca vaya por el camino del éxito.</p>
         </div>
 
         <div class="row">
