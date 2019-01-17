@@ -10,7 +10,7 @@
         <!-- <h1><a href="#intro" class="scrollto">SystemUrb</a></h1> -->
         
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="#intro"><img style="width:120px;" src="img/logo-principal.png" alt="SystenUrb" title="" /></a>
+        <a href="#intro"><img style="width:120px;" src="img/logo-codeurb.png" alt="SystenUrb" title="" /></a>
       </div>
 
       <nav id="nav-menu-container">

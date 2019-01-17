@@ -32,4 +32,4 @@ app.use(express.static(path.join(__dirname, '/public')));
 // Server is listenin
 app.listen(app.get('port'), () => {
     console.log('server on port', app.get('port'));
-});
+}); 
