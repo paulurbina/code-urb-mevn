@@ -43,25 +43,23 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form @submit.prevent="sendUser()" role="form" class="contactForm">
+          <form @submit.prevent="sendUser()" class="contactForm">
             
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input
                   type="text"
                   name="name"
-
                   v-model="user.name"
-                  v-validate="'required'"
-                  :class="{'danger': errors.has('name')}"
-
+                  v-validate="{ required: true, min: 5 }"
+                  :class="{ 'is-invalid': submitted && errors.has('name') }"
                   class="form-control"
                   id="name"
                   placeholder="Nombre"
                   data-rule="minlen:4"
                   data-msg="Please enter at least 4 chars"
                 >
-                <div v-show="errors.has('name')" class="danger-message">{{ errors.first('email') }}</div>
+              <div v-if="submitted && errors.has('name')" class="invalid-feedback">{{ errors.first('name') }}</div>
               </div>
 
               <div class="form-group col-md-6">
@@ -70,13 +68,15 @@
                   class="form-control"
                   name="email"
                   v-model="user.email"
+                  v-validate="'required||email'"
+                  :class="{ 'is-invalid': submitted && errors.has('email')}"
                   id="email"
                   placeholder="Email"
                   data-rule="email"
                   data-msg="Please enter a valid email"
                 >
+              <div v-if="submitted && errors.has('email')" class="invalid-feedback">{{ errors.first('email') }}</div>
               </div>
-              <div class="validation"></div>
 
 
             </div>
@@ -86,24 +86,29 @@
                 class="form-control"
                 name="subject"
                 v-model="user.subject"
+                v-validate="{ required: true, min: 5 }"
+                :class="{ 'is-invalid': submitted && errors.has('subject')}"
                 id="subject"
                 placeholder="Tema"
                 data-rule="minlen:4"
                 data-msg="Please enter at least 8 chars of subject"
               >
-              <div class="validation"></div>
+              <div v-if="submitted && errors.has('subject')" class="invalid-feedback">{{ errors.first('subject') }}</div>
             </div>
+
             <div class="form-group">
               <textarea
                 class="form-control"
                 name="message"
                 v-model="user.message"
+                v-validate="{ required: true, min:5 }"
+                :class="{ 'is-invalid': submitted && errors.has('message')}"                
                 rows="5"
                 data-rule="required"
                 data-msg="Please write something for us"
                 placeholder="Mensaje"
               ></textarea>
-              <div class="validation"></div>
+              <div v-if="submitted && errors.has('message')" class="invalid-feedback">{{ errors.first('message') }}</div>
             </div>
             <div class="text-center">
               <button>Enviar Mensaje</button>
@@ -113,30 +118,15 @@
       </div>
     </section>
     <!-- #contact -->
-  
-  
-  </div>
-
-
-  
+  </div>  
 </template>
 
 <script>
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue';
-import Veevalidate from 'vee-validate';
-Vue.use(BootstrapVue);
-Vue.use(Veevalidate);
 
-//Validacion personalizada
-// VeeValidate.Validator.extend('passphrase', {
-//     getMessage: field => 'Sorry dude, wrong pass phrase.',
-//     validate: value => value.toUpperCase() == 'Demogorgon'.toUpperCase()
-// });
-
+import swal from 'sweetalert';// https://github.com/t4t5/sweetalert
 
 class User {
-  constructor(name = null, email = null, subject = null, message = null) {
+  constructor(name = '', email = '', subject = '', message = '') {
     this.name = name;
     this.email = email;
     this.subject = subject;
@@ -148,42 +138,41 @@ export default {
   data() {
     return {
       user: new User(),
-    };
+      // user: {
+      //   name: '',
+      //   email: '',
+      //   subject: '',
+      //   message: ''
+      // },
+      submitted: false
+    }
   },
   methods: {
     sendUser(e) {
-        
-        this.$validator.validateAll();
-          //   fetch("/", {
-          //   method: "POST",
-          //   body: JSON.stringify(this.user),
-          //   headers: {
-          //     Accept: "application/json",
-          //     "Content-Type": "application/json"
-          //   }
-          // })
-          //   .then(res => res.json())
-          //   .then(data => {
-          //     this.user = new User();
-          //   });
-        }  
+      this.submitted = true;
+      this.$validator.validate().then(valid => {
+        if (valid) {
+          // alert('sucess!' + JSON.stringify(this.user))
+          //send Data user
+          fetch("/", {
+            method: "POST",
+            body: JSON.stringify(this.user),
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json"
+            }
+          })
+          .then(res => res.json())
+          .then(data => {
+            this.user = new User();
+          });
+          this.submitted = false;
+          swal("Gracias!", "Tus datos han sido enviados", "success");
+        }
+      });
     },
+   },
+
 };
 </script>
-
-<style scoped>
-.danger-message {
-	color: red;
-}
-
-.danger {
-	border: 1px solid red;
-}
-</style>
-
-
-
-
-
-
 
