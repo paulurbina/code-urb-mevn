@@ -43,7 +43,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form @submit.prevent="sendUser()" class="contactForm">
+          <form @submit.prevent="sendUser()" class="contactForm" autocomplete="off">
             
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -150,27 +150,36 @@ export default {
   methods: {
     sendUser(e) {
       this.submitted = true;
-      this.$validator.validate().then(valid => {
-        if (valid) {
-          // alert('sucess!' + JSON.stringify(this.user))
-          //send Data user
-          fetch("/", {
-            method: "POST",
-            body: JSON.stringify(this.user),
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json"
-            }
-          })
-          .then(res => res.json())
-          .then(data => {
-            this.user = new User();
-          });
-          this.submitted = false;
-          swal("Gracias!", "Tus datos han sido enviados", "success");
-        }
-      });
+      if (!this.validEmail(this.user.email)) {
+        this.submitted = true;
+      } else if(this.user.email){
+        this.$validator.validate().then(valid => {
+          if (valid) {
+            // alert('sucess!' + JSON.stringify(this.user))
+            //send Data user
+            fetch("/", {
+              method: "POST",
+              body: JSON.stringify(this.user),
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json"
+              }
+            })
+            .then(res => res.json())
+            .then(data => {
+              this.user = new User();
+            });
+            this.submitted = false;
+            swal("Gracias!", "Tus datos han sido enviados", "success");
+          }
+        });
+      }
+
     },
+    validEmail(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
    },
 
 };

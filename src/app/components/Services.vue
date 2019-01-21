@@ -17,19 +17,44 @@
 
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-code"></i></div>
-            <h4 class="title"><a href="">Desarrollo web</a></h4>
+            <h4 class="title"><a href="" data-toggle="modal" data-target="#exampleModalCenter">Desarrollo web</a></h4>
             <p class="description text-justify">Deja que vean tu marca con una buena plataforma digital usando las mejores tecnologías para tu comodidad y la experiencia de tus consumidores. </p>
+            <!--MODALS DESARROLLO WEB-->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+
+
+
+
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-network"></i></div>
             <h4 class="title"><a href="">Posicionamiento web</a></h4>
             <p class="description text-justify">El posicionamiento web te permitirá mejorar la visibilidad de tu sitio web en los buscadores,indispensable para cualquier empresa.</p>
           </div>
+
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
             <h4 class="title"><a href="">E-Comerce</a></h4>
             <p class="description text-justify">Vende tus productos con mayor seguridad con una tienda virtual  y únete al negocio más rentable del mundo digital. </p>
           </div>
+          
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-videocam-outline"></i></div>
             <h4 class="title"><a href="">Video institucional</a></h4>
@@ -39,8 +64,9 @@
             <div class="icon"><i class="ion-ios-camera-outline"></i></div>
             <h4 class="title"><a href="">Fotografia digital</a></h4>
             <p class="description text-justify">Te entregamos fotografías de calidad para que puedas realizar tus catálogos, volantes, revistas, entre otros. Y así tus productos o servicios se reflejen de forma visual. 
-</p>
+            </p>
           </div>
+          
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paperplane-outline"></i></div>
             <h4 class="title"><a href="">Animacion videos</a></h4>
@@ -53,3 +79,9 @@
     </section><!-- #services -->
     </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
