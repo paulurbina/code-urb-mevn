@@ -8,7 +8,6 @@
 
         <header class="section-header">
           <h3>SOBRE NOSOTROS</h3>
-          <p>En System Urb nos enfocamos en darle una nueva experiencia digital a tu marca para que sea  vista mundialmente. </p>
         </header>
 
         <div class="row about-cols">

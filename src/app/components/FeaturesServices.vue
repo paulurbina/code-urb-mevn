@@ -44,7 +44,8 @@
 </template>
 
 <style scoped>
-   #featured-services {
-     height: 300px;
+   #featured-services.box {
+     height: 290px;
    }
+
 </style>
