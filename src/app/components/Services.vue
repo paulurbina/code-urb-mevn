@@ -8,9 +8,6 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Servicios</h3>
-          <p>
-            Tenemos los servicios que necesitas para repotenciar tu marca y crecer en el mercado. 
-          </p>
         </header>
 
         <div class="row">
