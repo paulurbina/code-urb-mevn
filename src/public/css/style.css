@@ -980,7 +980,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   display: inline-block;
   opacity: 0;
-  line-height: 1;
+  line-height: 0;
   text-align: center;
   width: 36px;
   height: 36px;
