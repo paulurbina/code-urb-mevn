@@ -20,7 +20,7 @@
               </div>
               <h2 class="title"><a href="#">Nuestra Mision</a></h2>
               <p class="text-justify">
-                Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales. 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy dummy text of the printing and typesetting. 
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@
               </div>
               <h2 class="title"><a href="#">Nuestra Vision</a></h2>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales. 
               </p>
             </div>
           </div>

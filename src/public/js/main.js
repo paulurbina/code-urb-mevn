@@ -103,7 +103,7 @@
         $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
         $('#mobile-body-overly').fadeOut();
       }
-      return false;
+      return false; 
     }
   }
 });
@@ -112,8 +112,17 @@
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
+      $('#logotipo').css({
+        "top":"18px",
+        "transition":"0.8s"
+      });
     } else {
       $('#header').removeClass('header-scrolled');
+      $("#logotipo").css({
+        "width":"130px",
+        "height":"40px",
+        "top":"25px"
+      });
     }
   }); 
 

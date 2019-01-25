@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/user-db', {
     .catch(err => console.log(err));
 
 // settings
-app.set('port', process.env.PORT || 3000);  
+app.set('port', process.env.PORT || 8090);  
 
 // middlewares
 app.use(morgan('dev'));
