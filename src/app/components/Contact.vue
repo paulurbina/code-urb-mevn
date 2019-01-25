@@ -15,7 +15,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Dirección</h3>
-              <address>Lomas de los Lirios N#130 1# piso Surco - Lima</address>
+              <address>Lomas de los Lirios N#130 Surco - Lima</address>
             </div>
           </div>
 

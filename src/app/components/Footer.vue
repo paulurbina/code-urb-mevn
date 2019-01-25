@@ -29,7 +29,7 @@
             <h4>Contactanos</h4>
             <p>
               Lomas de los Lirios N#130<br>
-              1# piso Surco - Lima<br>
+              Surco - Lima<br>
               Perú <br>
               <strong>Telefono:</strong> +51 920 484 285<br>
               <strong>Email:</strong> systemurb@gmail.com<br>
