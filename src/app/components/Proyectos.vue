@@ -39,7 +39,7 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="/img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=-2VPKWwl5Rw&start_radio=1&list=RD-2VPKWwl5Rw" class="link-details" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
+                <a href="https://www.youtube.com/watch?v=-2VPKWwl5Rw&start_radio=1&list=RD-2VPKWwl5Rw" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
@@ -67,7 +67,7 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" class="link-details" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
+                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
@@ -81,7 +81,7 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" class="link-details" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
+                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
