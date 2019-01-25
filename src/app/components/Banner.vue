@@ -15,7 +15,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Lorem Ipsum dolor 1</h2>
+                <h2>DISEÑAMOS TU WEB CON UN ENFOQUE DIFERENTE</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
@@ -25,7 +25,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Lorem Ipsum dolor 2</h2>
+                <h2>EL MUNDO DEL INTERNET ES AHORA</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Lorem Ipsum dolor 3</h2>
+                <h2>ACTUALIZA Y AVANZA</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
