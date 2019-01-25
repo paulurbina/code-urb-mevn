@@ -20,7 +20,7 @@
               </div>
               <h2 class="title"><a href="#">Nuestra Mision</a></h2>
               <p class="text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy dummy text of the printing and typesetting. 
+                Contribuir al crecimiento de nuestros clientes ofreciendo soluciones digitales y audiovisuales para  así potenciar su marca e imagen en el mundo digital. 
               </p>
             </div>
           </div>
