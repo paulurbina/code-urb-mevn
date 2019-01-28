@@ -27,10 +27,12 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Deja que vean tu marca con una buena plataforma digital usando las mejores tecnologías para tu comodidad y la experiencia de tus consumidores.<br /> 
-                  -	Asesoría web y aterrizaje de la idea<br/>
-                  -	Diseño web (Desarrollo frontend ,Desarrollo de backend)<br/>
-                  -	Programación ( Arquitectura TI)
+                 Deja que vean tu marca con una buena plataforma digital usando las mejores tecnologías para tu comodidad y la experiencia de tus consumidores.<br /> 
+                <ul class="list">
+                 <li>Asesoría web y aterrizaje de la idea</li>
+                 <li>Diseño web (Desarrollo frontend ,Desarrollo de backend)</li>
+                 <li>Programación ( Arquitectura TI)</li>
+                  </ul> 
                 </div>
               </div>
             </div>
@@ -56,9 +58,11 @@
                 </div>
                 <div class="modal-body">
                   El posicionamiento web te permitirá mejorar la visibilidad de tu sitio web en los buscadores, aparecer en las primeras posiciones de Google ya que es indispensable para cualquier empresa que quiera tener éxito comercial.<br/> 
-                  -	CEO, Arquitectura de datos en navegadores para el posicionamiento en los navegadores<br/>
-                  -	Servicos Pagos ( Google Adwords ) <br/>
-                  -	Atracción de clientes potenciales
+                  <ul>
+                    <li>CEO, Arquitectura de datos en navegadores para el posicionamiento en los navegadores</li>
+                  <li>Servicos Pagos ( Google Adwords )</li>
+                  <li>Atracción de clientes potenciales</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -81,9 +85,11 @@
                 </div>
                 <div class="modal-body">
                   Vende tus productos con mayor seguridad con una tienda virtual  y únete al negocio más rentable del mundo digital. <br/>
-                  -	Asesoría web y aterrizaje de la idea <br/>
-                  -	Diseño web (Desarrollo frontend ,Desarrollo de backend)<br/>
-                  -	Programación ( Arquitectura TI)
+                  <ul>
+                    <li>Asesoría web y aterrizaje de la idea</li>
+                  <li>Diseño web (Desarrollo frontend ,Desarrollo de backend)</li>
+                  <li>Programación ( Arquitectura TI)</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -108,9 +114,11 @@
                 </div>
                 <div class="modal-body">
                   Realizamos videos de calidad sobre tu negocio captando la atención de tus consumidores  y a su vez conozcan tus productos y servicios.<br/>
-                  -	Pre Producción ( Creación de la idea y organización para la realización del video)<br/>
-                  -	Producción ( Realización del video con cámaras full HD)<br/>
-                  -	Post Producción (proceso de edición del material que se grabó durante la producción)
+                  <ul>
+                    <li>Pre Producción ( Creación de la idea y organización para la realización del video)</li>
+                  <li>Producción ( Realización del video con cámaras full HD)</li>
+                  <li>Post Producción (proceso de edición del material que se grabó durante la producción)</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -136,8 +144,10 @@
                 </div>
                 <div class="modal-body">
                   Te entregamos fotografías de calidad para que puedas realizar tus catálogos, volantes, revistas, entre otros. Y así tus productos o servicios se reflejen de forma visual.<br/> 
-                -	Sesión Fotográfica ( Fotografía profesional para resaltar el producto o servicio en exteriores o estudio fotográfico)<br/>
-                -	Edición de Fotográfica ( Uso de Programas: Photoshop / Ligthroom) 
+                  <ul>
+                     <li>Sesión Fotográfica ( Fotografía profesional para resaltar el producto o servicio en exteriores o estudio fotográfico)</li>
+                    <li>Edición de Fotográfica ( Uso de Programas: Photoshop / Ligthroom)</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -152,3 +162,18 @@
     </div>
 </template>
 
+<style scoped>
+  .modal-title, .close{
+    color: #18d26e;
+    font-weight: bold;
+  }
+  .modal-header {
+    background-color: black;
+  }
+  .close {
+    text-decoration: none;
+  }
+  .modal-body {
+    font-family: "Montserrat", sans-serif;
+  }
+</style>

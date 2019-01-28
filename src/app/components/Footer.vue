@@ -47,7 +47,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>SystemUrb</strong>. Derechos Reservados
+        &copy; Copyright Diseñador y Desarrollado por <strong>SystemUrb</strong>. Derechos Reservados
       </div>
       <div class="credits">
       </div>

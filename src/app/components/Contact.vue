@@ -138,21 +138,22 @@ export default {
   data() {
     return {
       user: new User(),
-      // user: {
-      //   name: '',
-      //   email: '',
-      //   subject: '',
-      //   message: ''
-      // },
       submitted: false
     }
   },
   methods: {
     sendUser(e) {
       this.submitted = true;
+      if (this.user.name <= 5 && this.user.subject <= 5 && this.user.message <= 5) {
+        this.submitted = true;
+      }
+      if (this.user.name === '' && this.user.subject === '' && this.user.message === '') {
+        this.submitted = true;
+      }
       if (!this.validEmail(this.user.email)) {
         this.submitted = true;
-      } else if(this.user.email){
+      } 
+      else {
         this.$validator.validate().then(valid => {
           if (valid) {
             // alert('sucess!' + JSON.stringify(this.user))
@@ -171,6 +172,8 @@ export default {
             });
             this.submitted = false;
             swal("Gracias!", "Tus datos han sido enviados", "success");
+          } else {
+            this.submitted = true;
           }
         });
       }
@@ -184,4 +187,3 @@ export default {
 
 };
 </script>
-

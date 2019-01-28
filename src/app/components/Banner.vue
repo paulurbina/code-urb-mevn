@@ -15,7 +15,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>DISEÑAMOS TU WEB CON UN ENFOQUE DIFERENTE</h2>
+                <h2>Diferenciate del resto y crea tu sitio web con nosotros</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
@@ -25,7 +25,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>EL MUNDO DEL INTERNET ES AHORA</h2>
+                <h2>Transforma tus visitas en ventas</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>ACTUALIZA Y AVANZA</h2>
+                <h2>Da a conocer tus productos y servicios con imagenes</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>

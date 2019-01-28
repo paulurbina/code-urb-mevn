@@ -3,10 +3,10 @@
       <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header">  
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
+      <div id="logo" class="pull-left intro">
         <!-- <h1><a href="#intro" class="scrollto">SystemUrb</a></h1> -->
         
         <!-- Uncomment below if you prefer to use an image logo -->

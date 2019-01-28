@@ -4,7 +4,7 @@
     ============================-->
     <section id="featured-services">
       <div class="container">
-        <div class="row">
+        <div class="row features">
 
           <div class="col-lg-4 box text-center">
             <i class="ion-ios-bookmarks-outline"></i>
