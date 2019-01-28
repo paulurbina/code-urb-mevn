@@ -2,6 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const path = require('path');
+const expvalidator = require('express-validator');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -20,7 +22,9 @@ mongoose.connect('mongodb://localhost/user-db', {
 app.set('port', process.env.PORT || 8090);  
 
 // middlewares
+app.use(expvalidator());
 app.use(morgan('dev'));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json());
 
 // routes

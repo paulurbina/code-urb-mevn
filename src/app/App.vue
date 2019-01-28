@@ -7,6 +7,7 @@
         <Services_seccion></Services_seccion>
         <Skills_seccion></Skills_seccion>
         <Proyectos_seccion></Proyectos_seccion>
+        <OurClients_seccion></OurClients_seccion>
         <Contact_seccion></Contact_seccion>
         <Footer_seccion></Footer_seccion>
     </div>
@@ -22,6 +23,7 @@ import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 import FeatureServices from './components/FeaturesServices.vue';
+import OurClients from './components/OurClients.vue';
 
 export default { 
     components: {
@@ -31,6 +33,7 @@ export default {
         AboutUs_seccion: AboutUs,
         Services_seccion: Services,
         Proyectos_seccion: Proyectos,
+        OurClients_seccion: OurClients,
         Skills_seccion: Skills,
         Contact_seccion: Contact,
         Footer_seccion: Footer
