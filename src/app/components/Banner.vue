@@ -15,7 +15,8 @@
             <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Diferenciate del resto y crea tu sitio web con nosotros</h2>
+                <h2>DIFERENCIATE DEL RESTO</h2> 
+                <h3 style="color: white;">Y CREA TU SITIO WEB CON NOSOTROS</h3>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>

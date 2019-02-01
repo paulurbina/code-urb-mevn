@@ -49,3 +49,36 @@
     </section>
      </div>
 </template>
+
+<style scoped>
+
+#skills {
+  padding: 60px 0;
+}
+
+#skills .progress {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+#skills .progress .skill {
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+
+#skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+#skills .progress-bar {
+  width: 1px;
+  text-align: left;
+  transition: .9s;
+}
+
+</style>
