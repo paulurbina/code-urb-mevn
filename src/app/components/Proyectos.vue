@@ -24,7 +24,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="/img/chichen-example.jpg" class="img-fluid" alt="">
+                <img src="/img/portfolio-img/str.jpg" class="img-fluid" alt="">
                 <a href="https://www.youtube.com/watch?v=-2VPKWwl5Rw&start_radio=1&list=RD-2VPKWwl5Rw" class="link-details" title="Mas detalles" target="_blank"><i class="ion ion-android-open"></i></a>
               </figure>
 
