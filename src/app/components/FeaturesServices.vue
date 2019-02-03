@@ -44,11 +44,10 @@
 </template>
 
 <style scoped>
-   #featured-services.box {
-     height: 290px;
-   }
+#featured-services.box {
+     height: 340px;
+ }
 
-   
 #featured-services {
   background: #000;
 }

@@ -45,7 +45,7 @@
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestra Vision</a></h2>
-              <p>
+              <p class="text-justify">
                 Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales. 
               </p>
             </div>

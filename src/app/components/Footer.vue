@@ -11,7 +11,7 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <img style="width:130px;height: 40px;" src="/img/logo-codeurb.png" alt="">
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+            <p style="width:260px;" class="text-justify">En SystemUrb nos enfocamos en darle una nueva experiencia digital a tu marca para que sea vista mundialmente</p>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">

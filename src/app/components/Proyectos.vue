@@ -25,12 +25,12 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="/img/portfolio-img/str.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=-2VPKWwl5Rw&start_radio=1&list=RD-2VPKWwl5Rw" class="link-details" title="Mas detalles" target="_blank"><i class="ion ion-android-open"></i></a>
+                <a href="https://serviciotecnicoriver.herokuapp.com/" class="link-details" title="Mas detalles" target="_blank"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Web #1</a></h4>
-                <p>Ecomerce</p>
+                <h4><a href="#">Soporte Técnico River</a></h4>
+                <p>Landing Page</p>
               </div>
             </div>
           </div>
@@ -39,12 +39,12 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="/img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=-2VPKWwl5Rw&start_radio=1&list=RD-2VPKWwl5Rw" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
+                <a href="https://www.facebook.com/FokusPeru/" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Red social #1</a></h4>
-                <p>Red social</p>
+                <h4><a href="#">Fokus +</a></h4>
+                <p>Red Social</p>
               </div>
             </div>
           </div>
@@ -52,13 +52,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="img/chichen-example.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #1" title="Ver"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio-img/portfolio-photo1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio-img/portfolio-photo1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #1" title="Ver"><i class="ion ion-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Fotografia #1</a></h4>
-                <p>Red social</p>
+                <h4><a href="#">5 Gallos</a></h4>
+                <p>Fotografia Productos</p>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 360px;
+  height: 380px;
   overflow: hidden;
 }
 
@@ -191,6 +191,11 @@
   background: #fff;
   border-radius: 50%;
   transition: 0.2s linear;
+}
+
+img {
+  width: 400px;
+  height: 400px;
 }
 
 #portfolio .portfolio-item figure .link-preview i,

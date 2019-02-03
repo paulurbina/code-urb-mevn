@@ -12,31 +12,36 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/banner2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>DIFERENCIATE DEL RESTO</h2> 
-                <h3 style="color: white;">Y CREA TU SITIO WEB CON NOSOTROS</h3>
+                <h3>Y CREA TU SITIO WEB CON NOSOTROS</h3>
+                <br>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/banner1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Transforma tus visitas en ventas</h2>
+                <h2>TRANSFORMA TUS VISITAS EN VENTAS</h2>
+                <h3>Y ASEGURA TUS CLIENTES</h3>
+                <br>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/banner3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Da a conocer tus productos y servicios con imagenes</h2>
+                <h2>UNA IMAGEN CAMBIA</h2>
+                <h3>TU CRECIMINETO EMPRESARIAL</h3>
+                <br>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
             </div>
@@ -60,6 +65,11 @@
 </template>
 
 <style scoped>
+
+h3 {
+  color: white;
+  font-size:25px;
+}
 
 #intro {
   display: table;
