@@ -1541,14 +1541,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 60px;
   }
 
-  #intro p {
+  /* #intro p {
     width: 60%;
-  }
+  } */
 
-  #intro .carousel-control-prev,
+  /* #intro .carousel-control-prev,
   #intro .carousel-control-next {
     width: 5%;
-  }
+  } */
 
   #nav-menu-container {
     padding-right: 60px;
@@ -1567,10 +1567,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   #header #logo img {
     max-height: 40px;
   }
-
+/* 
   #intro h2 {
     font-size: 28px;
-  }
+  } */
 
   #nav-menu-container {
     display: none;

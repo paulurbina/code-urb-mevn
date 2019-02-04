@@ -16,7 +16,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>DIFERENCIATE DEL RESTO</h2> 
-                <h3>Y CREA TU SITIO WEB CON NOSOTROS</h3>
+                <p>Y CREA TU SITIO WEB CON NOSOTROS</p>
                 <br>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
@@ -28,7 +28,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>TRANSFORMA TUS VISITAS EN VENTAS</h2>
-                <h3>Y ASEGURA TUS CLIENTES</h3>
+                <p>Y ASEGURA TUS CLIENTES</p>
                 <br>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
@@ -40,7 +40,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>UNA IMAGEN CAMBIA</h2>
-                <h3>TU CRECIMINETO EMPRESARIAL</h3>
+                <p>TU CRECIMINETO EMPRESARIAL</p>
                 <br>
                 <a href="#featured-services" class="btn-get-started scrollto">Empieza</a>
               </div>
@@ -65,11 +65,6 @@
 </template>
 
 <style scoped>
-
-h3 {
-  color: white;
-  font-size:25px;
-}
 
 #intro {
   display: table;
@@ -126,7 +121,7 @@ h3 {
   text-align: center;
 }
 
-#intro h2 {
+#intro h2 { /*verificar*/
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
@@ -137,6 +132,7 @@ h3 {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-size: 28px;
 }
 
 #intro .carousel-fade {
@@ -204,5 +200,25 @@ h3 {
   color: #18d26e;
 }
 
+@media (max-width: 768px) {
+  #intro h2 {
+    font-size: 28px;
+  }
+  #intro p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #intro p {
+    width: 60%;
+  }
+  
+  #intro .carousel-control-prev,
+  #intro .carousel-control-next {
+    width: 5%;
+  }
+
+}
 
 </style>
