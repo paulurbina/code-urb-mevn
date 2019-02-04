@@ -144,10 +144,6 @@
   #nav-menu-container {
     display: none;
   }
-
-  #mobile-nav-toggle {
-    display: inline;
-  }
 }
 
 </style>

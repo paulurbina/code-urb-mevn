@@ -29,7 +29,7 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Soporte Técnico River</a></h4>
+                <h4><a href="https://serviciotecnicoriver.herokuapp.com/" target="_blank">Soporte Técnico River</a></h4>
                 <p>Landing Page</p>
               </div>
             </div>
@@ -43,7 +43,7 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Fokus +</a></h4>
+                <h4><a href="https://www.facebook.com/FokusPeru/" target="_blank">Fokus +</a></h4>
                 <p>Red Social</p>
               </div>
             </div>
@@ -81,11 +81,11 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
+                <a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Red social #2</a></h4>
+                <h4><a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" target="_blank">Delamor-Regalos</a></h4>
                 <p>Red social</p>
               </div>
             </div>

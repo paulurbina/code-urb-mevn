@@ -1,66 +1,84 @@
 <template>
-    <div> 
-        
-  <!--==========================
+  <div>
+    <!--==========================
     Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 footer-info">
-            <img style="width:130px;height: 40px;" src="/img/logo-codeurb.png" alt="">
-            <p style="width:260px;" class="text-justify">En SystemUrb nos enfocamos en darle una nueva experiencia digital a tu marca para que sea vista mundialmente</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Enlaces</h4>
-            <ul>
-              <li><i class="ion-ios-arrow-right up-intro"></i> <a href="#intro">Inicio</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Contactanos</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#services">Servicios</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terminos de servicio</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Politicas de privacidad</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-contact">
-            <h4>Contactanos</h4>
-            <p>
-              Lomas de los Lirios N#130<br>
-              Surco - Lima<br>
-              Perú <br>
-              <strong>Telefono:</strong> +51 920 484 285<br>
-              <strong>Email:</strong> systemurb@gmail.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <img style="width:130px;height: 40px;" src="/img/logo-codeurb.png" alt>
+              <p
+                style="width:260px;"
+                class="text-justify"
+              >En SystemUrb nos enfocamos en darle una nueva experiencia digital a tu marca para que sea vista mundialmente</p>
             </div>
 
-          </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Enlaces</h4>
+              <ul>
+                <li>
+                  <i class="ion-ios-arrow-right up-intro"></i>
+                  <a href="#intro">Inicio</a>
+                </li>
+                <li>
+                  <i class="ion-ios-arrow-right"></i>
+                  <a href="#contact">Contactanos</a>
+                </li>
+                <li>
+                  <i class="ion-ios-arrow-right"></i>
+                  <a href="#services">Servicios</a>
+                </li>
+                <li>
+                  <i class="ion-ios-arrow-right"></i>
+                  <a href="#">Terminos de servicio</a>
+                </li>
+                <li>
+                  <i class="ion-ios-arrow-right"></i>
+                  <a href="#">Politicas de privacidad</a>
+                </li>
+              </ul>
+            </div>
 
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contactanos</h4>
+              <p>Lomas de los Lirios N#130
+                <br>Surco - Lima
+                <br>Perú
+                <br>
+                <strong>Telefono:</strong> +51 920 484 285
+                <br>
+                <strong>Email:</strong> systemurb@gmail.com
+                <br>
+              </p>
+
+              <div class="social-links">
+                <a href="#" class="facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright Diseñador y Desarrollado por <strong>SystemUrb</strong>. Derechos Reservados
+      <div class="container">
+        <div class="copyright">&copy; Copyright Diseñador y Desarrollado por
+          <strong>SystemUrb</strong>. Derechos Reservados
+        </div>
+        <div class="credits"></div>
       </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- #footer -->
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
-    </div>
-    
+    </footer>
+    <!-- #footer -->
+    <a href="#" class="back-to-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+    <div id="preloader"></div>
+  </div>
 </template>
 
 <style scoped>
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -131,7 +149,7 @@
 
 #footer .footer-top h4::before,
 #footer .footer-top h4::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -222,5 +240,13 @@
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+@media (max-width: 768px) {
+
+  .back-to-top {
+    bottom: 15px;
+  }
+
 }
 </style>
