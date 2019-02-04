@@ -38,7 +38,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="/img/chichen-example.jpg" class="img-fluid" alt="">
+                <img src="/img/portfolio-img/fokus.jpg" class="img-fluid" alt="">
                 <a href="https://www.facebook.com/FokusPeru/" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
@@ -52,13 +52,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio-img/portfolio-photo1.jpg" class="img-fluid" alt="">
+                <img src="img/portfolio-img/delamor.jpg" class="img-fluid" alt="">
                 <a href="img/portfolio-img/portfolio-photo1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #1" title="Ver"><i class="ion ion-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">5 Gallos</a></h4>
-                <p>Fotografia Productos</p>
+                <h4><a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" target="_blank">Delamor</a></h4>
+                <p>Fotografia de Producto</p>
               </div>
             </div>
           </div>
@@ -267,6 +267,13 @@ img {
   font-size: 14px;
   text-transform: uppercase;
 }
+/* 
+@media (max-width: 768px) {
+  #portfolio #portfolio-flters li {
+    width: 24px;
+    font-size: 9px;
+  }
+} */
 
 
 </style>
