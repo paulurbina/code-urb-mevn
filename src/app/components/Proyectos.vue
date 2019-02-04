@@ -52,8 +52,8 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio-img/delamor.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio-img/portfolio-photo1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #1" title="Ver"><i class="ion ion-eye"></i></a>
+                <img src="img/portfolio-img/delamor.jpg" class="img-fluid" alt=""><!--revisar-->
+                <a href="img/portfolio-img/delamor-big.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #1" title="Ver"><i class="ion ion-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
