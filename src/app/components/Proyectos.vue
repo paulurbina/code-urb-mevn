@@ -7,7 +7,7 @@
         <header class="section-header">
           <h3 class="section-title">Nuestros Proyectos</h3>
         </header>
-
+  
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
@@ -24,7 +24,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="/img/portfolio-img/str.jpg" class="img-fluid" alt="">
+                <img src="/img/portfolio-img/str1.jpg" class="img-fluid" alt="">
                 <a href="https://serviciotecnicoriver.herokuapp.com/" class="link-details" title="Mas detalles" target="_blank"><i class="ion ion-android-open"></i></a>
               </figure>
 

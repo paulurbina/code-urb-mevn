@@ -4,7 +4,7 @@
       Contact Section
     ============================-->
     <section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
+      <div class="container"> 
         <div class="section-header">
           <h3>Contactenos</h3>
           <p>Hola! estás interesad@ en iniciar un proyecto digital con nosotros, pues déjanos un mensaje para poder ayudarte</p>
@@ -290,5 +290,24 @@ export default {
 #contact .form button:hover {
   background: #13a456;
 }
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+
+@media (min-width: 768px) {
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding: 20px 0;
+  }
+
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
 
 </style>
