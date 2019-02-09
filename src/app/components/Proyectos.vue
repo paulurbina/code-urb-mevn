@@ -66,12 +66,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio-img/paul-landing.jpg" class="img-fluid" alt="">
+                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" target="_blank" class="link-details" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Web #2</a></h4>
+                <h4><a href="#" target="_blank">Web #2</a></h4>
                 <p>Web Landing</p>
               </div>
             </div>
