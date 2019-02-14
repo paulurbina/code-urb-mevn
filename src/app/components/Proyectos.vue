@@ -58,7 +58,7 @@
 
               <div class="portfolio-info">
                 <h4><a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" target="_blank">Delamor</a></h4>
-                <p>Fotografia de Producto</p>
+                <p>Fotografía de Producto</p>
               </div>
             </div>
           </div>
@@ -71,8 +71,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#" target="_blank">Web #2</a></h4>
-                <p>Web Landing</p>
+                <h4><a href="#" target="_blank">Paul Urbina</a></h4>
+                <p>LANDING PAGE</p>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" target="_blank">Delamor-Regalos</a></h4>
+                <h4><a href="https://www.facebook.com/CromoFilmsPeru/" target="_blank">Cromo Films</a></h4>
                 <p>Red social</p>
               </div>
             </div>
