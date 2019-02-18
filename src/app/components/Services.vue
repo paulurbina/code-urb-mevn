@@ -14,7 +14,7 @@
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="1.4s">
+                  <div class="card box wow bounceInUp" style="width: 20rem;">
                     <img src="img/services/desarrollo.jpg" class="card-img-top img-fluid" alt="">
                     <div class="card-body">
                       <div class="icon"><i class="ion-code"></i></div>
@@ -22,12 +22,13 @@
                         <a href="#" data-toggle="modal" data-target="#exampleModalCenter1">Desarrollo web</a>
                       </h4>
                       <p class="description text-justify">Deja que vean tu marca con una buena plataforma digital usando las mejores tecnologías para tu comodidad y la experiencia de tus consumidores. </p>
+                      
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="1.4s">
+                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="0.8s">
                     <img src="img/services/position.jpg" class="card-img-top img-fluid" alt="">
                     <div class="card-body">
                        <div class="icon"><i class="ion-network"></i></div>
@@ -40,7 +41,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="1.4s">
+                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="1s">
                     <img src="img/services/ecommerce.jpg" class="card-img-top img-fluid" alt="">
                     <div class="card-body">
                       <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
@@ -65,7 +66,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="1.4s">
+                  <div class="card box wow bounceInUp" style="width: 20rem;" data-wow-duration="1.8s">
                     <img src="img/services/photography.jpg" class="card-img-top img-fluid" alt="">
                     <div class="card-body">
                         <div class="icon"><i class="ion-ios-camera-outline"></i></div>

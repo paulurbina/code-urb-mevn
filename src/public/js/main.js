@@ -114,13 +114,13 @@
       $('#header').addClass('header-scrolled');
       $('#logotipo').css({
         "top":"18px",
-        "transition":"0.8s"
+        "transition":"0.5s"
       });
     } else {
       $('#header').removeClass('header-scrolled');
       $("#logotipo").css({
         "width":"130px",
-        "height":"40px",
+        "height":"40px",  
         "top":"25px"
       });
     }
@@ -133,7 +133,7 @@
     (index === 0) ?
     introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
     introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
-
+    
     $(this).css("background-image", "url('" + $(this).children('.carousel-background').children('img').attr('src') +"')");
     $(this).children('.carousel-background').remove();
   });
@@ -181,13 +181,6 @@
     }
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
 
   new Swiper('.swiper-container', {
     slidesPerView: 3,
@@ -197,7 +190,7 @@
       clickable: true,
     },
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     }
   });
