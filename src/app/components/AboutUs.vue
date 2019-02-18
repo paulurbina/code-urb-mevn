@@ -15,7 +15,7 @@
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
-                <img src="img/about/about-mission.jpg" alt="" class="img-fluid">
+                <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-mission.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestra Mision</a></h2>
@@ -28,7 +28,7 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about/about-plan.jpg" alt="" class="img-fluid">
+                <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-plan.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestro Plan</a></h2>
@@ -41,7 +41,7 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about/about-vision.jpg" alt="" class="img-fluid">
+                <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-vision.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestra Vision</a></h2>
