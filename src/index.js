@@ -5,15 +5,14 @@ const path = require('path');
 const expvalidator = require('express-validator');
 const bodyParser = require('body-parser');
 //Verify if it is production or development
-if(process.env.NODE_ENV !== 'producction') {
-    require('dotenv').config();
-}
+require('dotenv').config();
 
 const app = express();
 
+
 // Connect Database
 mongoose.set('useFindAndModify', false);
-mongoose.connect(`mongodb+srv://tkBD2UUIJ:eqwN8Hu1zMyHVau@cluster0-uahnm.mongodb.net/test?retryWrites=true`, {
+mongoose.connect(`${process.env.MONGOATLAS_URI}`, {
     useCreateIndex: true,
     useNewUrlParser: true
 })
