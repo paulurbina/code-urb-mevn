@@ -13,7 +13,7 @@ const app = express();
 
 // Connect Database
 mongoose.set('useFindAndModify', false);
-mongoose.connect(process.env.MONGOATLAS_URI, {
+mongoose.connect(`mongodb+srv://tkBD2UUIJ:eqwN8Hu1zMyHVau@cluster0-uahnm.mongodb.net/test?retryWrites=true`, {
     useCreateIndex: true,
     useNewUrlParser: true
 })
