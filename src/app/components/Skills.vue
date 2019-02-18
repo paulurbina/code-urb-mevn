@@ -38,7 +38,7 @@
 
           <div class="progress">
             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">PHOTOSHOP | PREMIER | ILLUSTRATOR <i class="val">55%</i></span>
+              <span class="skill">PHOTOSHOP <span class="premier">| PREMIER</span> <span class="ilustrator">| ILLUSTRATOR</span> <i class="val">55%</i></span>
             </div>  
           </div>
 
@@ -78,6 +78,21 @@
   width: 1px;
   text-align: left;
   transition: .9s;
+}
+
+@media (max-width: 770px) {
+  span.skill {
+    font-size: 10px;
+  }
+  span.ilustrator {
+    display: none;
+  }
+}
+
+@media (max-width: 330px) {
+  span.premier {
+    display: none;
+  }
 }
 
 </style>

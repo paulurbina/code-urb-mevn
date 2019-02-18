@@ -267,13 +267,12 @@ img {
   font-size: 14px;
   text-transform: uppercase;
 }
-/* 
+
 @media (max-width: 768px) {
-  #portfolio #portfolio-flters li {
-    width: 24px;
-    font-size: 9px;
+  img {
+    width: 100%;
   }
-} */
+}
 
 
 </style>
