@@ -4,14 +4,16 @@ const mongoose = require('mongoose');
 const path = require('path');
 const expvalidator = require('express-validator');
 const bodyParser = require('body-parser');
+//Verify if it is production or development
+if(process.env.NODE_ENV !== 'producction') {
+    require('dotenv').config();
+}
 
 const app = express();
 
 // Connect Database
-//MLAB
-//mongodb://data-users:tQLwtolZ6pRXfpp5@ds249824.mlab.com:49824/data-users
 mongoose.set('useFindAndModify', false);
-mongoose.connect('mongodb://localhost/user-db', {
+mongoose.connect(process.env.MONGOATLAS_URI, {
     useCreateIndex: true,
     useNewUrlParser: true
 })
@@ -32,6 +34,8 @@ app.use('/',require('./routes/user'));
 
 // Static files
 app.use(express.static(path.join(__dirname, '/public')));
+
+
 
 // Server is listenin
 app.listen(app.get('port'), () => {

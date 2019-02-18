@@ -1,3 +1,0 @@
-DATABASENAME = data-users
-DATABASEUSERNAME = data-users
-DATABASEPASSWORD = tQLwtolZ6pRXfpp5
