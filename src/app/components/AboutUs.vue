@@ -7,46 +7,19 @@
       <div class="container">
         
         <header class="section-header">
-          <h3>SOBRE NOSOTROS</h3>
+          <h3>{{titulo}}</h3>
         </header>
 
         <div class="row about-cols">
-
-          <div class="col-md-4 wow fadeInUp">
+          <div :class="['col-md-4', 'wow', 'fadeInUp']" v-for="(parrafo, index) in parrafos" v-bind:key="index.id" :data-wow-delay="parrafo.delay">
             <div class="about-col">
               <div class="img">
-                <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-mission.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                <img :src="parrafo.img" alt="" :class="'img-fluid'">
+                <div class="icon"><i :class="parrafo.icons"></i></div>
               </div>
-              <h2 class="title"><a href="#">Nuestra Mision</a></h2>
-              <p class="text-justify">
-                Contribuir al crecimiento de nuestros clientes ofreciendo soluciones digitales y audiovisuales para  así potenciar su marca e imagen en el mundo digital. 
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-col">
-              <div class="img">
-                <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-plan.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Nuestro Plan</a></h2>
-              <p class="text-justify">
-                Fortalecer a nuestros socios usando las nuevas tecnologías e diseños innovadores para sobresalir como empresa y llamar la atención de los consumidores. 
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="about-col">
-              <div class="img">
-                <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Nuestra Vision</a></h2>
-              <p class="text-justify">
-                Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales. 
+              <h2 class="title"><a href="#">{{parrafo.titulo}}</a></h2>
+              <p :class="'text-justify'">
+                 {{parrafo.descripcion}}
               </p>
             </div>
           </div>
@@ -57,6 +30,42 @@
     </section><!-- #about -->
     </div>
 </template>
+
+<script>
+export default {
+  
+  data: function () {
+    return {
+      titulo: 'SOBRE NOSOTROS',
+      parrafos: [
+            {
+                img: 'https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-mission.jpg',
+                titulo: 'Nuestra Mision',
+                descripcion: 'Contribuir al crecimiento de nuestros clientes ofreciendo soluciones digitales y audiovisuales para  así potenciar su marca e imagen en el mundo digital',
+                delay: '0',
+                icons: 'ion-ios-speedometer-outline'
+            },
+            {
+                img: 'https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-plan.jpg',
+                titulo: 'Nuestro plan',
+                descripcion:'Fortalecer a nuestros socios usando las nuevas tecnologías e diseños innovadores para sobresalir como empresa y llamar la atención de los consumidores.',
+                delay: '0.1s',
+                icons: 'ion-ios-list-outline'
+            },
+            {
+                img: 'https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-vision.jpg',
+                titulo: 'Nuestra Vision',
+                descripcion:'Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales.',
+                delay: '0.2s',
+                icons: 'ion-ios-eye-outline'
+            }
+      ],
+    }
+  }
+
+}
+</script>
+
 
 <style scoped>
 
