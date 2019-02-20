@@ -4,41 +4,21 @@
       Skills Section
     ============================-->
     <section id="skills">
-      <div class="container">
+      <div :class="'container'">
 
         <header class="section-header pb-5">
-          <h3>Nuestras habilidades</h3>
+          <h3>{{titulo}}</h3>
         </header>
 
         <div class="skills-content">
-
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">HTML5 <i class="val">100%</i></span>
+          <div class="progress" v-for="(progress, index) in progressions" v-bind:key="index.id">
+            <div :class="['progress-bar', progress.bg]" role="progressbar" :aria-valuenow="progress.valuenow" aria-valuemin="0" aria-valuemax="100">
+              <span :class="'skill'">{{progress.skill}} <i class="val">{{progress.val}}</i></span>
             </div>
           </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">CSS3 <i class="val">90%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Fotografia y Video <i class="val">80%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">JavaScript (EMC7) <i class="val">65%</i></span>
-            </div>
-          </div>
-
           <div class="progress">
             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">PHOTOSHOP <span class="premier">| PREMIER</span> <span class="ilustrator">| ILLUSTRATOR</span> <i class="val">55%</i></span>
+              <span :class="'skill'">PHOTOSHOP <span class="premier">| PREMIER</span> <span class="ilustrator">| ILLUSTRATOR</span> <i class="val">55%</i></span>
             </div>  
           </div>
 
@@ -48,6 +28,46 @@
     </section>
      </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      titulo: 'Nuestras habilidades',
+      progressions: [
+        {
+          bg: 'bg-success',
+          valuenow: '100',
+          skill: 'HTML5',
+          val: '100%'
+        },
+        {
+          bg: 'bg-info',
+          valuenow: '90',
+          skill: 'CSS3',
+          val: '90%'
+        },
+        {
+          bg: 'bg-secondary',
+          valuenow: '80',
+          skill: 'Fotografia y Video ',
+          val: '80%'
+        },
+        {
+          bg: 'bg-warning',
+          valuenow: '65',
+          skill: 'JavaScript (EMC7) ',
+          val: '65%'
+        },
+      ],
+    }
+  },
+  methods: {
+
+  }
+}
+</script>
+
 
 <style scoped>
 
