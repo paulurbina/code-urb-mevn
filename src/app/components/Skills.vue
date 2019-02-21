@@ -13,15 +13,12 @@
         <div class="skills-content">
           <div class="progress" v-for="(progress, index) in progressions" v-bind:key="index.id">
             <div :class="['progress-bar', progress.bg]" role="progressbar" :aria-valuenow="progress.valuenow" aria-valuemin="0" aria-valuemax="100">
-              <span :class="'skill'">{{progress.skill}} <i class="val">{{progress.val}}</i></span>
+              <span :class="'skill'" v-if="progress.skill !== 'Photoshop'">{{progress.skill}} <i class="val">{{progress.val}}</i></span>
+              <span :class="'skill'" v-if="progress.skill == 'Photoshop'">
+                {{progress.skill}} <span class="premier">| PREMIER</span> <span class="ilustrator">| ILLUSTRATOR</span> <i class="val">{{progress.val}}</i>
+              </span>            
             </div>
           </div>
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span :class="'skill'">PHOTOSHOP <span class="premier">| PREMIER</span> <span class="ilustrator">| ILLUSTRATOR</span> <i class="val">55%</i></span>
-            </div>  
-          </div>
-
         </div>
 
       </div>
@@ -59,12 +56,15 @@ export default {
           skill: 'JavaScript (EMC7) ',
           val: '65%'
         },
+        {
+          bg: 'bg-danger',
+          valuenow: '55',
+          skill: 'Photoshop',
+          val: '55%'
+        },
       ],
     }
   },
-  methods: {
-
-  }
 }
 </script>
 

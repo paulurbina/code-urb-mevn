@@ -112,15 +112,15 @@ export default {
       ],
       }
   },
-  methods: {
-    openImage: function () {
-      const open = this.proyects.open.substr(0,3);
-      if(open === 'img') {
-         var element = document.getElementsByClassName('link-details');
-         element.setAttribute('target', '');
-      }
-    }
-  }
+  // methods: {
+  //   openImage: function () {
+  //     const open = this.proyects.open.substr(0,3);
+  //     if(open === 'img') {
+  //        var element = document.getElementsByClassName('link-details');
+  //        element.setAttribute('target', '');
+  //     }
+  //   }
+  // }
 }
 </script>
 
