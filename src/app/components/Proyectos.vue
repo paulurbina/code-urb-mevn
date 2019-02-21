@@ -20,89 +20,21 @@
         </div>
 
         <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+          <div :class="[allclass, proyect.filter]" :data-wow-delay="proyect.delay" v-for="proyect in proyects" v-bind:key="proyect.id">
             <div class="portfolio-wrap">
-              <figure>
-                <img src="/img/portfolio-img/str1.jpg" class="img-fluid" alt="">
-                <a href="https://serviciotecnicoriver.herokuapp.com/" class="link-details" title="Mas detalles" target="_blank"><i class="ion ion-android-open"></i></a>
+              <figure> 
+                <img :src="proyect.image" class="img-fluid" alt="">
+                <a :href="proyect.open" v-on:click="openImage" class="link-details" title="Mas detalles" target="_blank"><i :class="proyect.icon"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://serviciotecnicoriver.herokuapp.com/" target="_blank">Soporte Técnico River</a></h4>
-                <p>Landing Page</p>
+                <h4><a :href="proyect.link" target="_blank">{{proyect.titulo}}</a></h4>
+                <p>{{proyect.type}}</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="/img/portfolio-img/fokus.jpg" class="img-fluid" alt="">
-                <a href="https://www.facebook.com/FokusPeru/" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="https://www.facebook.com/FokusPeru/" target="_blank">Fokus +</a></h4>
-                <p>Red Social</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio-img/delamor.jpg" class="img-fluid" alt=""><!--revisar-->
-                <a href="img/portfolio-img/delamor-big.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #1" title="Ver"><i class="ion ion-eye"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" target="_blank">Delamor</a></h4>
-                <p>Fotografía de Producto</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio-img/paul-landing.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=ilw-qmqZ5zY" target="_blank" class="link-details" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#" target="_blank">Paul Urbina</a></h4>
-                <p>LANDING PAGE</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F" class="link-details" target="_blank" title="Mas Detalles"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="https://www.facebook.com/CromoFilmsPeru/" target="_blank">Cromo Films</a></h4>
-                <p>Red social</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/chichen-example.jpg" class="img-fluid" alt="">
-                <a href="img/chichen-example.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fotografia #2" title="Ver"><i class="ion ion-eye"></i></a>
-              </figure>
-              <div class="portfolio-info">
-                <h4><a href="#">Fotografia #2</a></h4>
-                <p>Fotografia</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
       </div>
@@ -111,6 +43,87 @@
 
     </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      allclass: 'col-lg-4 col-md-6 portfolio-item wow fadeInUp',
+      proyects: [
+        {
+          filter: 'filter-web',
+          delay: "0.1s",
+          image: '/img/portfolio-img/str1.jpg',
+          icon: 'ion ion-android-open',
+          open: 'https://serviciotecnicoriver.herokuapp.com/',
+          link: 'https://serviciotecnicoriver.herokuapp.com/',
+          titulo: 'Soporte Técnico River',
+          type: 'Landing Page'
+        },
+        {
+          filter: 'filter-app',
+          delay: '0.2s',
+          image: '/img/portfolio-img/fokus.jpg',
+          icon: 'ion ion-android-open',
+          open: 'https://www.facebook.com/FokusPeru/',
+          link: 'https://www.facebook.com/FokusPeru/',
+          titulo: 'Fokus +',
+          type: 'Red social'
+        },
+        {
+          filter: 'filter-card',
+          delay: '0.3s',
+          image: 'img/portfolio-img/delamor.jpg',
+          icon: 'ion ion-eye',
+          open: 'img/portfolio-img/delamor-big.jpg',
+          link: 'https://www.facebook.com/RegalaDelamor/?__tn__=k*F&tn-str=k*F',
+          titulo: 'Delamor',
+          type: 'Fotografía de Producto'
+        },
+        {
+          filter: 'filter-web',
+          delay: '0.1s',
+          image: 'img/portfolio-img/paul-landing.jpg',
+          icon: 'ion ion-android-open',
+          link: 'https://www.youtube.com/watch?v=ilw-qmqZ5zY',
+          titulo: 'Paul Urbina',
+          type: 'LANDING PAGE'
+        },
+        {
+          filter: 'filter-app',
+          delay: '0.2s',
+          image: 'img/chichen-example.jpg',
+          icon: 'ion ion-android-open',
+          open: 'https://www.facebook.com/CromoFilmsPeru/',
+          link: 'https://www.facebook.com/CromoFilmsPeru/',
+          titulo: 'Cromo Films',
+          type: 'Red social'
+        },
+        {
+          filter: 'filter-card',
+          delay: '0.1s',
+          image: 'img/chichen-example.jpg',
+          icon: 'ion ion-eye',
+          open: 'img/chichen-example.jpg',
+          link: 'https://www.youtube.com/watch?v=05dcxPp62BQ',
+          titulo: 'Fotografia #2',
+          type: 'Fotografia'
+        }
+      ],
+      }
+  },
+  methods: {
+    openImage: function () {
+      const open = this.proyects.open.substr(0,3);
+      if(open === 'img') {
+         var element = document.getElementsByClassName('link-details');
+         element.setAttribute('target', '');
+      }
+    }
+  }
+}
+</script>
+
 
 <style scoped>
 
