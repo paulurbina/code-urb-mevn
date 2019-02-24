@@ -77,7 +77,7 @@
                 >
               <div v-if="submitted && errors.has('email')" class="invalid-feedback">{{ errors.first('email') }}</div>
               </div>
-
+  
 
             </div>
             <div class="form-group">

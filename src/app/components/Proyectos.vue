@@ -18,13 +18,14 @@
             </ul>
           </div>
         </div>
-
+<!-- v-if="proyect.open.substring(0,8) === 'https://'" -->
         <div class="row portfolio-container">
           <div :class="[allclass, proyect.filter]" :data-wow-delay="proyect.delay" v-for="proyect in proyects" v-bind:key="proyect.id">
             <div class="portfolio-wrap">
               <figure> 
                 <img :src="proyect.image" class="img-fluid" alt="">
-                <a :href="proyect.open" v-on:click="openImage" class="link-details" title="Mas detalles" target="_blank"><i :class="proyect.icon"></i></a>
+                <a :href="proyect.open"  class="link-details" title="Mas detalles" target="_blank"><i :class="proyect.icon"></i></a>
+                <!-- <a :href="proyect.open" class="link-details" title="Mas detalles"><i :class="proyect.icon"></i></a> -->
               </figure>
 
               <div class="portfolio-info">
@@ -112,6 +113,9 @@ export default {
       ],
       }
   },
+  beforeCreate() {
+    console.log(this.proyects);
+  }
   // methods: {
   //   openImage: function () {
   //     const open = this.proyects.open.substr(0,3);
