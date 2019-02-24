@@ -3,13 +3,13 @@ const router = express.Router();
 const { check, validationResult } = require('express-validator/check');
 
 const User = require('../model/User'); 
-  
+
 //METHOD POST
 router.post('/', [
-  check('name').isAlpha().isLength({min: 5}).trim().escape().withMessage('Un nombre mayor a 5 caracteres'),
-  check('email').isEmail().normalizeEmail().withMessage('Ingrese un email valido'),
-  check('subject').isAlphanumeric().isLength({min:10}).trim().escape().withMessage('Ingrese minimo 10 caracteres'),
-  check('message').isAlphanumeric().isLength({min:10}).trim().escape().withMessage('Ingrese minimo 10 caracteres')
+  check('name').isLength({min: 5}).withMessage('Un nombre mayor a 5 caracteres'),
+  check('email').isEmail().withMessage('Ingrese un email valido'),
+  check('subject').isLength({min:5}).withMessage('Ingrese minimo 10 caracteres'),
+  check('message').isLength({min:10}).withMessage('Ingrese minimo 10 caracteres')
 ],async (req, res) => {
   // const { name, email, subject, message } = req.body;
   const errors = validationResult(req.body);
