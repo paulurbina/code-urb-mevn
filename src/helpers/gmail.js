@@ -9,8 +9,8 @@ module.exports =  {
             secure: false,
             port: 587,
             auth: {
-                user: 'paulurbina94@gmail.com',
-                pass: 'calisTONY94'
+                user: process.env.CORREO_GM,
+                pass: process.env.PASSWORD_GM
             }
         });
 
