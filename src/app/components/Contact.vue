@@ -143,7 +143,6 @@ export default {
   },
   methods: {
     sendUser(e) {
-      this.submitted = true;
         this.$validator.validate().then(valid => {
           if (valid) {
             // alert('sucess!' + JSON.stringify(this.user))

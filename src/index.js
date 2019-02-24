@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
@@ -5,7 +9,6 @@ const path = require('path');
 const expvalidator = require('express-validator');
 const bodyParser = require('body-parser');
 //Verify if it is production or development
-require('dotenv').config();
 
 const app = express();
 
@@ -13,7 +16,6 @@ const app = express();
 // Connect Database
 // mongoose.set('useFindAndModify', false);
 mongoose.connect(`${process.env.MONGOMLAB_URI}`, {
-    // useCreateIndex: true,
     useNewUrlParser: true
 })
     .then(db => console.log('DB is connected'))
