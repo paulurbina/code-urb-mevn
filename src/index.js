@@ -14,9 +14,9 @@ const app = express();
 
 
 // Connect Database
-// mongoose.set('useFindAndModify', false);
+mongoose.set('useFindAndModify', false);
 mongoose.connect(process.env.MONGOMLAB_URI, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
 })
     .then(db => console.log('DB is connected'))
     .catch(err => console.log(err));
@@ -35,8 +35,6 @@ app.use('/',require('./routes/user'));
 
 // Static files
 app.use(express.static(path.join(__dirname, '/public')));
-
-
 
 // Server is listenin
 app.listen(app.get('port'), () => {
