@@ -3,7 +3,7 @@ const router = express.Router();
 const { check, validationResult } = require('express-validator/check');
 
 const User = require('../model/User'); 
-
+  
 //METHOD POST
 router.post('/', [
   check('name').isAlpha().isLength({min: 5}).trim().escape().withMessage('Un nombre mayor a 5 caracteres'),
