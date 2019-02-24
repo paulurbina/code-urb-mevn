@@ -11,8 +11,8 @@ const app = express();
 
 
 // Connect Database
-mongoose.set('useFindAndModify', false);
-mongoose.connect(`${process.env.MONGOMLAB_URI}`, {
+// mongoose.set('useFindAndModify', false);
+mongoose.connect(process.env.MONGOMLAB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true
 })
