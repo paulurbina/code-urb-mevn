@@ -144,16 +144,6 @@ export default {
   methods: {
     sendUser(e) {
       this.submitted = true;
-      if (this.user.name <= 5 && this.user.subject <= 5 && this.user.message <= 5) {
-        this.submitted = true;
-      }
-      if (this.user.name === '' && this.user.subject === '' && this.user.message === '') {
-        this.submitted = true;
-      }
-      if (!this.validEmail(this.user.email)) {
-        this.submitted = true;
-      } 
-      else {
         this.$validator.validate().then(valid => {
           if (valid) {
             // alert('sucess!' + JSON.stringify(this.user))
@@ -179,12 +169,7 @@ export default {
       }
 
     },
-    validEmail(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
-    }
-   },
-
+   
 };
 </script>
 
