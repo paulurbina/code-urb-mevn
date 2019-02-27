@@ -86,14 +86,15 @@ export default {
           delay: '0.1s',
           image: 'img/portfolio-img/paul-landing.jpg',
           icon: 'ion ion-android-open',
-          link: 'https://www.youtube.com/watch?v=ilw-qmqZ5zY',
+          open: 'https://paulurbina.herokuapp.com/',
+          link: 'https://paulurbina.herokuapp.com/',
           titulo: 'Paul Urbina',
           type: 'LANDING PAGE'
         },
         {
           filter: 'filter-app',
           delay: '0.2s',
-          image: 'img/chichen-example.jpg',
+          image: 'img/portfolio-img/cromofilms.jpg',
           icon: 'ion ion-android-open',
           open: 'https://www.facebook.com/CromoFilmsPeru/',
           link: 'https://www.facebook.com/CromoFilmsPeru/',
@@ -103,12 +104,12 @@ export default {
         {
           filter: 'filter-card',
           delay: '0.1s',
-          image: 'img/chichen-example.jpg',
+          image: 'img/portfolio-img/video.jpg',
           icon: 'ion ion-eye',
-          open: 'img/chichen-example.jpg',
-          link: 'https://www.youtube.com/watch?v=05dcxPp62BQ',
+          open: '#',
+          link: '#',
           titulo: 'Fotografia #2',
-          type: 'Fotografia'
+          type: 'Video'
         }
       ],
       }

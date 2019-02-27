@@ -124,6 +124,7 @@ img {
   background: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
+  overflow-x: none;
 }
 
 #services .box {

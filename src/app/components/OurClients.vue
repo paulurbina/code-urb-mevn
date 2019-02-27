@@ -3,18 +3,14 @@
     <section id="clients" class="wow fadeInUp">
       <div class="container">
         <header class="section-header">
-          <h3>Our Clients</h3>
+          <h3>Nuestros Clientes</h3>
         </header>
 
         <div class="owl-carousel clients-carousel">
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-1.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-8.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-3.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-7.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-6.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-4.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-5.png" alt>
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526493/systemurb-assets/clients/client-2.png" alt>
+          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244396/systemurb-assets/clients/cromo.png" alt="">
+          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244396/systemurb-assets/clients/delamor.png" alt="">
+          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244395/systemurb-assets/clients/striver.png" alt="">
+          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244395/systemurb-assets/clients/fokus.png" alt="">
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGOMLAB_URI, {
     .catch(err => console.log(err));
 
 // settings
-app.set('port', process.env.PORT || 8090);  
+app.set('port', process.env.PORT || 3000);  
 
 // middlewares
 app.use(expvalidator());
