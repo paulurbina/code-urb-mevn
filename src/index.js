@@ -1,4 +1,5 @@
 if (process.env.NODE_ENV !== 'production') {
+    //Verify if it is production or development 
     require('dotenv').config();
 }
 
@@ -7,11 +8,18 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const path = require('path');
 const expvalidator = require('express-validator');
-const bodyParser = require('body-parser');
-//Verify if it is production or development
 
+const bodyParser = require('body-parser'),
+    DEFAULT_BODY_SIZE_LIMIT = 1024*1024*10,
+    DEFAULT_PARAMETER_LIMIT = 10000;
+
+const bodyParserJsonConfig = () => ({
+    parameterLimit: DEFAULT_PARAMETER_LIMIT,
+    limit: DEFAULT_BODY_SIZE_LIMIT
+});
+
+// Inititializations
 const app = express();
-
 
 // Connect Database
 mongoose.set('useFindAndModify', false);
@@ -28,6 +36,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(expvalidator());
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json(bodyParserJsonConfig()));
 app.use(express.json());
 
 // routes

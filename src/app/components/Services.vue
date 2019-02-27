@@ -22,7 +22,6 @@
                         <a href="#" data-toggle="modal" data-target="#exampleModalCenter1">Desarrollo web</a>
                       </h4>
                       <p class="description text-justify">Deja que vean tu marca con una buena plataforma digital usando las mejores tecnologías para tu comodidad y la experiencia de tus consumidores. </p>
-                      
                     </div>
                   </div>
                 </div>
