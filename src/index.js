@@ -44,6 +44,7 @@ app.use('/',require('./routes/user'));
 
 // Static files
 app.use(express.static(path.join(__dirname, '/public')));
+app.use('/swiper', express.static(path.join(__dirname,'../node_modules/swiper/dist/')))
 
 // Server is listenin
 app.listen(app.get('port'), () => {
