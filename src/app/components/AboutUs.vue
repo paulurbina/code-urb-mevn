@@ -14,7 +14,11 @@
           <div :class="['col-md-4', 'wow', 'fadeInUp']" v-for="(parrafo, index) in parrafos" v-bind:key="index.id" :data-wow-delay="parrafo.delay">
             <div class="about-col">
               <div class="img">
-                <img :src="parrafo.img" alt="" :class="'img-fluid'">
+                <img
+                style="width:100%;"
+                :srcset="parrafo.srcsets"
+                sizes="(max-width:400px) 320px, (max-width:900px) 450px"
+                :src="parrafo.img" alt="" :class="'img-fluid'">
                 <div class="icon"><i :class="parrafo.icons"></i></div>
               </div>
               <h2 class="title"><a href="#">{{parrafo.titulo}}</a></h2>
@@ -40,6 +44,7 @@ export default {
       parrafos: [
             {
                 img: 'https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-mission.jpg',
+                srcsets: "/img/about/about-mission_w320.jpg 320w, /img/about/about-mission_w450.jpg 450w",
                 titulo: 'Nuestra Mision',
                 descripcion: 'Contribuir al crecimiento de nuestros clientes ofreciendo soluciones digitales y audiovisuales para  así potenciar su marca e imagen en el mundo digital',
                 delay: '0',
@@ -47,6 +52,7 @@ export default {
             },
             {
                 img: 'https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-plan.jpg',
+                srcsets: "/img/about/about-plan_w320.jpg 320w, /img/about/about-plan_w450.jpg 450w",
                 titulo: 'Nuestro plan',
                 descripcion:'Fortalecer a nuestros socios usando las nuevas tecnologías e diseños innovadores para sobresalir como empresa y llamar la atención de los consumidores.',
                 delay: '0.1s',
@@ -54,6 +60,7 @@ export default {
             },
             {
                 img: 'https://res.cloudinary.com/dxbxsfubt/image/upload/v1550526678/systemurb-assets/about/about-vision.jpg',
+                srcsets: "/img/about/about-vision_w320.jpg 320w, /img/about/about-vision_w450.jpg 450w",
                 titulo: 'Nuestra Vision',
                 descripcion:'Ser la agencia número uno en el Perú, ayudando, creando e innovado para el beneficio y desarrollo de nuestros clientes a través de estrategias digitales.',
                 delay: '0.2s',

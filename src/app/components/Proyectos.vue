@@ -56,8 +56,8 @@ export default {
           delay: "0.1s",
           image: '/img/portfolio-img/str1.jpg',
           icon: 'ion ion-android-open',
-          open: 'https://serviciotecnicoriver.herokuapp.com/',
-          link: 'https://serviciotecnicoriver.herokuapp.com/',
+          open: 'https://serviciotecnicoriver.glitch.me/',
+          link: 'https://serviciotecnicoriver.glitch.me/',
           titulo: 'Soporte Técnico River',
           type: 'Landing Page'
         },

@@ -7,10 +7,30 @@
         </header>
 
         <div class="owl-carousel clients-carousel">
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244396/systemurb-assets/clients/cromo.png" alt="">
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244396/systemurb-assets/clients/delamor.png" alt="">
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244395/systemurb-assets/clients/striver.png" alt="">
-          <img src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244395/systemurb-assets/clients/fokus.png" alt="">
+          <img
+            srcset="img/clients/cromo_w95.png 95w,
+                  img/clients/cromo_w130.png 130w"
+            sizes="(max-width:400px) 95px,
+                   (max-width:900px) 130px"
+            src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244396/systemurb-assets/clients/cromo.png" alt="">
+          <img 
+            srcset="img/clients/delamor_w95.png 95w,
+                    img/clients/delamor_w130.png 130w"
+            sizes="(max-width:400px) 95px,
+                   (max-width:900px) 130px"
+            src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244396/systemurb-assets/clients/delamor.png" alt="">
+          <img
+            srcset="img/clients/striver_w95.png 95w,
+                    img/clients/striver_w130.png 130w"
+            sizes="(max-width:400px) 95px,
+                   (max-width:900px) 130px"
+            src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244395/systemurb-assets/clients/striver.png" alt="">
+          <img 
+            srcset="img/clients/fokus_w95.png 95w,
+                    img/clients/fokus_w130.png 130w"
+            sizes="(max-width:400px) 95px,
+                   (max-width:900px) 130px"
+            src="https://res.cloudinary.com/dxbxsfubt/image/upload/v1551244395/systemurb-assets/clients/fokus.png" alt="">
         </div>
       </div>
     </section>

@@ -12,7 +12,13 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/banner2.jpg" alt=""></div>
+            <div class="carousel-background">
+              <img 
+              srcset="img/intro-carousel/banner2_w400.jpg 400w,
+                      img/intro-carousel/banner2_w650.jpg 650w"
+              sizes="(max-width:400px) 400px,
+                   (max-width:900px) 650px"
+              src="img/intro-carousel/banner2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>DIFERENCIATE DEL RESTO</h2> 
@@ -24,7 +30,13 @@
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/banner1.jpg" alt=""></div>
+            <div class="carousel-background">
+              <img 
+              srcset="img/intro-carousel/banner1_w400.jpg 400w,
+                      img/intro-carousel/banner1_w650.jpg 650w"
+              sizes="(max-width:400px) 400px,
+                   (max-width:900px) 650px"
+              src="img/intro-carousel/banner1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>TRANSFORMA TUS VISITAS EN VENTAS</h2>
@@ -36,7 +48,13 @@
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/banner3.jpg" alt=""></div>
+            <div class="carousel-background">
+              <img 
+              srcset="img/intro-carousel/banner3_w400.jpg 400w,
+                      img/intro-carousel/banner3_w650.jpg 650w"
+              sizes="(max-width:400px) 400px,
+                   (max-width:900px) 650px"
+              src="img/intro-carousel/banner3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>UNA IMAGEN CAMBIA</h2>

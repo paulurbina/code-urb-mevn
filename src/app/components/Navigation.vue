@@ -11,7 +11,7 @@
         
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="#intro" class="d-flex align-items-center">
-          <img id="logotipo" src="img/logo-codeurb.png" class="img-fluid" alt="SystenUrb" title="" />
+          <img id="logotipo" src="img/logo-codeurb_v2.png" class="img-fluid" alt="SystenUrb" title="" />
         </a>
       </div>
 

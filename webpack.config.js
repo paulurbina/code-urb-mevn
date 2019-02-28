@@ -34,6 +34,13 @@ module.exports = {
                     "sass-loader"
                 ]
             },
+            {
+                test: /\.(jpe?g|png|svg|gif)$/,
+                resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/,
+                use: [
+                    'srcset-loader'
+                ]
+            }
         ]
     },
     plugins: [

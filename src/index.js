@@ -8,6 +8,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const path = require('path');
 const expvalidator = require('express-validator');
+const compression = require('compression')
 
 const bodyParser = require('body-parser'),
     DEFAULT_BODY_SIZE_LIMIT = 1024*1024*10,
@@ -33,6 +34,7 @@ mongoose.connect(process.env.MONGOMLAB_URI, {
 app.set('port', process.env.PORT || 3000);  
 
 // middlewares
+app.use(compression());
 app.use(expvalidator());
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
