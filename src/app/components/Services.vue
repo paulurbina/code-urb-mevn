@@ -17,7 +17,10 @@
 <!-- img-fluid -->
                 <div class="swiper-slide" v-for="(service, index) in services" v-bind:key="index.id">
                   <div class="card box wow bounceInUp" style="width: 20rem;" :data-wow-duration="service.data_duration">
-                    <img :src="service.imagen" class="card-img-top img-fluid" alt="">
+                    <img 
+                    :srcset="service.srcsets"
+                    sizes="(max-width:400px) 320px"
+                    :src="service.imagen" class="card-img-top img-fluid" alt="">
                     <div class="card-body">
                       <div class="icon"><i :class="service.icon"></i></div>
                       <h4 class="title">
@@ -48,6 +51,7 @@ export default {
       services: [
         { 
           data_duration: '0',
+          srcsets: 'img/services/desarrollo_w320.jpg',
           imagen: 'img/services/desarrollo.jpg',
           icon: 'ion-code',
           title: 'Desarrollo Web',
@@ -55,6 +59,7 @@ export default {
         },
         {
           data_duration: '0.8s',
+          srcsets: 'img/services/position_w320.jpg',
           imagen: 'img/services/position.jpg',
           icon: 'ion-network',
           title: 'Posicionamiento web',
@@ -62,6 +67,7 @@ export default {
         },
         {
           data_duration: '1s',
+          srcsets: 'img/services/ecommerce_w320.jpg',
           imagen: 'img/services/ecommerce.jpg',
           icon: 'ion-ios-bookmarks-outline',
           title: 'E-Comerce',
@@ -69,6 +75,7 @@ export default {
         },
         {
           data_duration: '1.4s',
+          srcsets: 'img/services/video_w320.jpg',
           imagen: 'img/services/video.jpg',
           icon: 'ion-ios-videocam-outline',
           title: 'Video institucional',
@@ -76,6 +83,7 @@ export default {
         },
         {
           data_duration: '1.8s',
+          srcsets: 'img/services/photography_w320.jpg',
           imagen: 'img/services/photography.jpg',
           icon: 'ion-ios-camera-outline',
           title: 'Fotografia Digital',
