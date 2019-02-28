@@ -26,7 +26,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     on: {
       beforeResize() {
-        if (window.innerWidth >= 320 || window.innerWidth >= 770 || window.innerWidth >= 940) {
+        if (window.innerWidth >= 320 || window.innerWidth >= 770) {
           swiper.slides.css('width', '');
         }
       }
